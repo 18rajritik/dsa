@@ -44,14 +44,86 @@
 // }
 
 // FUNCTION TO FIND THE AVERAGE OF THE NUMBERS
+
+// #include<iostream>
+// using namespace std;
+// int findAverage(int a, int b, int c){
+//     return (a+b+c)/3;
+// }
+// int main(){
+//     int answer = findAverage(5,10,15);
+//     cout << "the average of the numbers is :" << answer << endl;
+//     return 0;
+
+// }
+
+// PRINTING OF THE SQUARE PATTERN
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     for(int i=1; i<=4;i++){
+//         for(int j=1;j<=4;j++){
+//             cout << "*" << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// PRINTING OF THE RIGHT ANGLED TRIANGLE
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     for(int i=1; i<=5;i++){
+//         for(int j=1;j<=i;j++){
+//             cout << "*" << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// NUMBER TRIANGLE
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     for(int i=1;i<=5;i++){
+//         for(int j=1;j<=i;j++){
+//             cout << j << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// PRINTING OF THE REVERSE TRIANGLE
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     for(int i=4;i>=1;i--){
+//         for(int j=1;j<=i;j++){
+//             cout << "*" << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+//PRINTING OF THE FOLYDS TRIANGLE
 #include<iostream>
 using namespace std;
-int findAverage(int a, int b, int c){
-    return (a+b+c)/3;
-}
 int main(){
-    int answer = findAverage(5,10,15);
-    cout << "the average of the numbers is :" << answer << endl;
+    int count = 1;
+    for(int i=1;i<=10;i++){
+        for(int j=1;j<=i;j++){
+            cout << count << " ";
+            count ++;
+        }
+        cout << endl;
+    }
     return 0;
-
 }
