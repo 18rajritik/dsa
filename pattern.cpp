@@ -114,16 +114,46 @@
 // }
 
 //PRINTING OF THE FOLYDS TRIANGLE
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int count = 1;
+//     for(int i=1;i<=10;i++){
+//         for(int j=1;j<=i;j++){
+//             cout << count << " ";
+//             count ++;
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// PRINTING OF A SOLID RECTANGULAR PATTERN WHEN N=3 AND M=5
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n=3,m=5;
+//     for(int i=1;i<=n;i++){
+//         for(int j=1;j<=m;j++){
+//             cout << "*";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// NUMBER TRIANGLE PATTERN
 #include<iostream>
 using namespace std;
 int main(){
-    int count = 1;
-    for(int i=1;i<=10;i++){
+    int n=5;
+    for(int i=1;i<=n;i++){
         for(int j=1;j<=i;j++){
-            cout << count << " ";
-            count ++;
+            cout << i << " ";
+
         }
         cout << endl;
+
+        }
     }
-    return 0;
-}
