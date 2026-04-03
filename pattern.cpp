@@ -163,28 +163,38 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n=3;
+    int n=1000;
         // Implement the pattern printing logic here
-        for(int i=1;i<=n+1;i++){
-            if(i<=(n+1)/2){
-                for(int j=1;j<=(2*i-1);j++){
-                    cout << "*";
-                }
+ 
+        // Implement the pattern printing logic here
+        // printing the first part
+        for(int i=1;i<=n-1;i++){
+            for(int j=1;j<=n-i;j++){
+                cout << " ";
             }
-            else if (i>(n+1)/2){
-                int k =2*i-3;
-                while(k>=1){
-                    cout << "*";
-                    k=k-2;
-
-                }              
-            
+            for(int k=1;k<=2*i-1;k++){
+                cout << "*";
             }
             cout << endl;
-            
+        }
+        // printing of the second part
+        for(int k=1;k<=2*n-1;k++){
+            cout << "*";
+
+        }
+        cout << endl;
+        // PRINTING OF THE THIRD PART OF THIS PATTERN
+        for(int i=1;i<=n-1;i++){
+            for(int j=1;j<=i;j++){
+                cout << " ";
+            }
+            for(int k=1;k<=2*(n-i-1)+1;k++){
+                cout <<"*";
+            }
+            cout << endl;
         }
     
 
-return 0;
+    return 0;
 }
 
